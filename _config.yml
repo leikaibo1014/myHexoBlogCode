@@ -106,4 +106,3 @@ deploy:
 ## Plugins: http://hexo.io/plugins/
 plugins: hexo-generate-feed
 
-

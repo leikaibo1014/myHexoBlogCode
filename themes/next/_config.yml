@@ -45,13 +45,13 @@ rss: /atom.xml
 footer:
   # Specify the date when the site was setup.
   # If not defined, current year will be used.
-  #since: 2015
-    
+  since: 2018
+     
   # Icon between year and copyright info.
   icon: user
 
   # If not defined, will be used `author` from Hexo main config.
-  copyright:
+  copyright: 
   # -------------------------------------------------------------
   # Hexo link (Powered by Hexo).
   powered: true
@@ -64,6 +64,7 @@ footer:
   # -------------------------------------------------------------
   # Any custom text can be defined here.
   #custom_text: Hosted by <a target="_blank" href="https://pages.github.com">GitHub Pages</a>
+  counter: true 
 
 # ---------------------------------------------------------------
 # SEO Settings
@@ -150,7 +151,7 @@ social_icons:
 
 # Blog rolls
 links_icon: link
-links_title: Links
+links_title: 推荐阅读
 links_layout: inline
 #links_layout: inline
 links:
@@ -239,9 +240,9 @@ post_meta:
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
   item_text: true
-  wordcount: false
-  min2read: false
-  totalcount: false
+  wordcount: true
+  min2read: true
+  totalcount: true
   separated_meta: true
 
 # Wechat Subscriber
@@ -434,7 +435,7 @@ gitment:
 # This plugin is more useful in China, make sure you known how to use it.
 # And you can find the use guide at official webiste: http://www.jiathis.com/.
 # Warning: JiaThis does not support https.
-#jiathis:
+# jiathis:
   ##uid: Get this uid from http://www.jiathis.com/
 #add_this_id:
 
@@ -540,7 +541,7 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
+  enable: true
   app_id: #<app_id>
   app_key: #<app_key>
 
@@ -683,8 +684,8 @@ motion:
 # Fancybox
 fancybox: true
 
-# Progress bar in the top during page loading.
-pace: false
+# Progress bar in the top during page loading.进度条
+pace: true
 # Themes list:
 #pace-theme-big-counter
 #pace-theme-bounce
@@ -701,13 +702,15 @@ pace: false
 #pace-theme-minimal
 # For example
 # pace_theme: pace-theme-center-simple
-pace_theme: pace-theme-minimal
+# pace_theme: pace-theme-minimal
+pace_theme: pace-theme-center-circle
 
+# 动态背景
 # Canvas-nest
 canvas_nest: false
 
 # three_waves
-three_waves: false
+three_waves: true
 
 # canvas_lines
 canvas_lines: false
@@ -820,3 +823,8 @@ images: images
 
 # Theme version
 version: 5.1.4
+
+
+passage_end_tag:
+  enabled: true
+
